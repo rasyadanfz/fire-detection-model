@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import numpy as np
 from getPrediction import get_predictions
 
 app = FastAPI()
