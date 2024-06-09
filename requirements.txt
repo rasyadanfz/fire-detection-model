@@ -1,6 +1,6 @@
 hypercorn
 fastapi
 ultralytics
-opencv-python
+opencv-python-headless
 pydantic
 numpy
