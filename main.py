@@ -8,6 +8,10 @@ app = FastAPI()
 class InputData(BaseModel):
     b64imgstr: str
 
+@app.get("/")
+async def root():
+    return {"greeting": "Hello, World!", "message": "Welcome to FastAPI!"}
+
 @app.post('/predict')
 async def predict(input: InputData):
     b64imgstring = input.b64imgstr
